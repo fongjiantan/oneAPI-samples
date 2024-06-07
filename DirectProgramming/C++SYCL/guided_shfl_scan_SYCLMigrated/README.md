@@ -1,16 +1,16 @@
-# `guided_shfl_scal_migrated` Sample
+# `guided_shfl_scan_migrated` Sample
 
-This `guided_shfl_scal_migrated` sample demonstrates how to perform a scan operation across a thread block. The original CUDA source code is migrated to SYCL for portability across GPUs from multiple vendors.
+This `guided_shfl_scan_migrated` sample demonstrates how to perform a scan operation across a thread block. The original CUDA source code is migrated to SYCL for portability across GPUs from multiple vendors.
  
 | Property                  | Description
 |:---                       |:---
-| What you will learn       | Migrating and optimizing guided_shfl_scal_migrated from CUDA to SYCL
+| What you will learn       | Migrating and optimizing guided_shfl_scan_migrated from CUDA to SYCL
 | Time to complete          | 15 minutes
 | Category                      | Concepts and Functionality
 
 ## Purpose
 
-The guided_shfl_scal_migrated sample shows how to perform a scan operation axross a thread block with the SYCL version of the CUDA shfl_scan, which is the shift_sub_group_right method.
+The guided_shfl_scan_migrated sample shows how to perform a scan operation across a thread block with the SYCL version of the CUDA shfl_scan, which is the shift_sub_group_right method.
 
 > **Note**: We use Intel® open-sources SYCLomatic tool which assists developers in porting CUDA code automatically to SYCL code. To finish the process, developers complete the rest of the coding manually and then tune to the desired level of performance for the target architecture. User's can also use SYCLomatic Tool which comes along with the Intel® oneAPI Base Toolkit.
 
@@ -37,7 +37,7 @@ This sample contains two sets of sources in the following folders:
 
 When working with the command-line interface (CLI), you should configure the oneAPI toolkits using environment variables. Set up your CLI environment by sourcing the `setvars` script every time you open a new terminal window. This practice ensures that your compiler, libraries, and tools are ready for development.
 
-## Build the `guided_shfl_scal_migrated` Sample for CPU and GPU
+## Build the `guided_shfl_scan_migrated` Sample for CPU and GPU
 
 > **Note**: If you have not already done so, set up your CLI
 > environment by sourcing  the `setvars` script in the root of your oneAPI installation.
@@ -62,7 +62,7 @@ When working with the command-line interface (CLI), you should configure the one
 
    By default, this command sequence will build the `02_sycl_migrated` versions of the program.
 
-## Run the 'guided_shfl_scal_migrated` Sample
+## Run the 'guided_shfl_scan_migrated` Sample
 
 ### On Linux
 
@@ -75,7 +75,7 @@ Run the programs on a CPU or GPU. Each sample uses a default device, which in mo
 
 ## Example Output
 
-This is example output if you built the default and ran 'guided_shfl_scal_migrated'.
+This is example output if you built the default and ran 'guided_shfl_scan_migrated'.
 
 ```
 Starting shfl_scan
